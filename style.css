@@ -131,3 +131,47 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+.pressespiegel {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #eee;
+}
+
+.pressespiegel h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.pressespiegel ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.pressespiegel li {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.pressespiegel a {
+  color: #ccc;
+  text-decoration: none;
+  border-left: 4px solid #666;
+  padding-left: 12px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.pressespiegel a:hover {
+  color: #fff;
+  border-left-color: #fff;
+}
+
+.pressespiegel a span {
+  font-size: 0.9rem;
+  color: #999;
+}
