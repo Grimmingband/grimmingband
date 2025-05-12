@@ -47,12 +47,72 @@
 
 
 
- <section class="video">
+<!-- DSGVO-konformer YouTube-Embed mit Cookie-Zustimmung -->
+<section class="video">
   <h2>Debütsingle: Lindwurm</h2>
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/Pf02aJHkRCY" title="Grimming – Lindwurm" frameborder="0" allowfullscreen></iframe>
+  <div id="video-placeholder">
+    <div class="video-consent">
+      <p>Zum Schutz deiner Daten ist dieses Video blockiert. Mit Klick auf „Video laden“ akzeptierst du die Datenschutzerklärung von YouTube.</p>
+      <button onclick="loadVideo()">Video laden</button>
+      <p><small><a href="/datenschutz.html" target="_blank">Mehr erfahren</a></small></p>
+    </div>
   </div>
 </section>
+
+<script>
+  function loadVideo() {
+    const placeholder = document.getElementById("video-placeholder");
+    placeholder.innerHTML = `
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/pf02aJHkRCY" title="Grimming - Lindwurm"
+          frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+      </div>
+    `;
+  }
+</script>
+
+<style>
+  .video {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .video h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #eee;
+  }
+
+  .video-consent {
+    background: #222;
+    color: #eee;
+    padding: 20px;
+    border: 1px solid #444;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .video-consent button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .video-consent button:hover {
+    background: #666;
+  }
+
+  .video-wrapper iframe {
+    width: 90%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    border: none;
+  }
+</style>
 
 
 
