@@ -196,26 +196,21 @@ footer {
 }
 
 .auftritte li {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-left: 4px solid #666;
+  border-radius: 5px;
 }
 
 .auftritte a {
-  color: #ccc;
+  color: #4da6ff;
   text-decoration: none;
-  border-left: 4px solid #666;
-  padding-left: 12px;
-  display: block;
-  transition: all 0.2s ease;
 }
 
 .auftritte a:hover {
-  color: #fff;
-  border-left-color: #fff;
+  text-decoration: underline;
 }
 
-.auftritte a span {
-  font-size: 0.9rem;
-  color: #999;
-}
