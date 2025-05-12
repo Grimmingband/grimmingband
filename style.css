@@ -214,3 +214,25 @@ footer {
   text-decoration: underline;
 }
 
+.video {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #eee;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper iframe {
+  width: 90%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
