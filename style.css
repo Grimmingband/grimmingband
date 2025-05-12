@@ -175,3 +175,47 @@ footer {
   font-size: 0.9rem;
   color: #999;
 }
+.auftritte {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #eee;
+}
+
+.auftritte h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.auftritte ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.auftritte li {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.auftritte a {
+  color: #ccc;
+  text-decoration: none;
+  border-left: 4px solid #666;
+  padding-left: 12px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.auftritte a:hover {
+  color: #fff;
+  border-left-color: #fff;
+}
+
+.auftritte a span {
+  font-size: 0.9rem;
+  color: #999;
+}
